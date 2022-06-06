@@ -7,7 +7,7 @@
  * @author Edward Osei-Nyarko <edward.osei.nyarko@gmail.com>
  * 
  * Plugin Name:       Eddie Featues
- * Plugin URI:        https://github.com/nana-yaw
+ * Plugin URI:        https://github.com/nana-yaw/eddie-features
  * Description:       Adds Gutenberg Blocks.
  * Version:           1.0.0
  * Requires at least: 5.2
