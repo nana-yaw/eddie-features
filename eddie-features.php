@@ -1,5 +1,11 @@
 <?php
 /**
+ * 
+ * Eddie Features Plugin
+ * 
+ * @package eddie-features
+ * @author Edward Osei-Nyarko <edward.osei.nyarko@gmail.com>
+ * 
  * Plugin Name:       Eddie Featues
  * Plugin URI:        https://github.com/nana-yaw
  * Description:       Adds Gutenberg Blocks.
@@ -13,3 +19,18 @@
  * Text Domain:       eddie-features
  * Domain Path:       /languages
  */
+
+ /**
+ * Bootstrap the plugin.
+ */
+require_once 'vendor/autoload.php';
+
+use EddieFeatures\Plugin;
+
+if ( class_exists( 'EddieFeatures\Plugin' ) ) {
+	$the_plugin = new Plugin();
+}
+
+register_activation_hook( __FILE__, [ $the_plugin, 'activate' ] );
+
+register_deactivation_hook( __FILE__, [ $the_plugin, 'deactivate' ] );
